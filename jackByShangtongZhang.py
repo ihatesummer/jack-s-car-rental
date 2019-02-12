@@ -109,7 +109,7 @@ def expected_return(state, action, state_value, constant_returned_cars):
                         returns += prob_ * (reward + DISCOUNT * state_value[num_of_cars_first_loc_, num_of_cars_second_loc_])
     return returns
 
-def figure_4_2(constant_returned_cars=True):
+def figure_4_2(constant_returned_cars=False):
     value = np.zeros((MAX_CARS + 1, MAX_CARS + 1))
     policy = np.zeros(value.shape, dtype=np.int)
 
